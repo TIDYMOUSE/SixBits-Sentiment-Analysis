@@ -7,7 +7,7 @@
 pip install django
 ```
 
-    if on linux, use pip3
+if on linux, use pip3
 
 # REPO INSTRUCTIONS :-
 
