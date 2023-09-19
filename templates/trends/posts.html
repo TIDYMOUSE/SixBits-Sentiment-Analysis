@@ -40,16 +40,15 @@
     <div class="container1">
       
     <div class="contain1"> 
-     {% for post in posts %}
-     
-     <div id="disposable">
-       {{post.post_code}}
+      {% for post in posts %}
+      <div id="disposable">
+        <p>Username : {{post.username}}</p>
+        {{post.post_code}}
       </div>
       <div class="post">
-        
       </div>
       <script>
-        document.querySelector(".post").innerHTML += document.getElementById("disposable").innerText
+        document.querySelectorAll(".post")[document.querySelectorAll(".post").length - 1].innerHTML += document.getElementById("disposable").innerText
         document.getElementById("disposable").remove()
         </script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
