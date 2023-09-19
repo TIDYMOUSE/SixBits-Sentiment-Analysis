@@ -11,6 +11,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
     font-weight:lighter;
     /* position: relative;
     z-index: -1; */
@@ -42,7 +43,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .contain1{
-    width: 90vw;
+    width: 43vw;
     height: 85vh;
     border-radius: 12px;
     background-color: rgb(3, 3, 58);
@@ -89,10 +90,10 @@ body{
 }
 .container1{
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     
 }
