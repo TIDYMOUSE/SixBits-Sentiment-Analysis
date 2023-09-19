@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -25,7 +26,7 @@
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color:rgb(19, 19, 44);
+            background-color: rgb(19, 19, 44);
         }
 
         nav ul {
@@ -64,46 +65,52 @@
 
         .firstSection>div {
             width: 30%;
-            
+
         }
 
         .leftSection {
-           
+
             font-size: 3.5rem;
 
         }
-        .leftSection .buttons{
-           
-          padding:5px 0;
 
-       }
-        .leftSection .btn{
-           
-          padding: 12px;
-          background-color: rgb(154, 154, 179);
-          color: rgb(0, 3, 15);
-          border: 3px solid rgb(232, 232, 236);
-          border-radius: 12px;
-          font-size: 20px;
-          cursor: pointer;
-          font-weight: bolder;
+        .leftSection .buttons {
 
-       }
+            padding: 5px 0;
+
+        }
+
+        .leftSection .btn {
+
+            padding: 12px;
+            background-color: rgb(154, 154, 179);
+            color: rgb(0, 3, 15);
+            border: 3px solid rgb(232, 232, 236);
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bolder;
+            text-decoration: none;
+
+        }
+
         .rightSection {
-        font-size: 3rem;
-        margin-right: 120px; 
-        padding-right: 0; 
-    }
+            font-size: 3rem;
+            margin-right: 120px;
+            padding-right: 0;
+        }
+
         .rightSection img {
             width: 120%;
             margin: 100px 0;
-            
+
         }
 
         .purple {
             color: rgb(173, 143, 202);
         }
-        #element{
+
+        #element {
             color: rgb(173, 143, 202);
         }
     </style>
@@ -116,10 +123,10 @@
             <div class="right"></div>
             <ul>
                 <li> <a href="{% url 'home' %}">Home</li></a>
-        <li> <a href="{% url 'about-us' %}">About</li></a>
-        <li> <a href="{% url 'analyse' %}">Analyse</li></a>
-        <li> <a href="{% url 'trends' %}">Trending</li></a>
-                <li> <a href="/">Support</li></a>
+                <li> <a href="{% url 'about-us' %}">About</li></a>
+                <li> <a href="{% url 'analyse' %}">Analyse</li></a>
+                <li> <a href="{% url 'trends' %}">Trending</li></a>
+                <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
             </ul>
         </nav>
     </header>
@@ -129,20 +136,20 @@
                 <!-- Sentimental <span class="purple">Analysis :</span> -->
                 <div> Your Guide to Emotion-Driven Insights On</div>
                 <span id="element"></span>
-                 <div class="buttons">
-                    <button class="btn">Get Started</button>
-                 </div>
+                <div class="buttons">
+                    <a href="{% url 'trends' %}" class="btn">Get Started</a>
+                </div>
             </div>
             <div class="rightSection">
-                <img src="ab.png" alt="">
+                <img src="{% static 'images/ab.png'%}" alt="homeImg">
             </div>
         </section>
     </main>
-   
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Trending Topics','Comments','Social Media Posts '],
+            strings: ['Trending Topics', 'Comments', 'Social Media Posts '],
             typeSpeed: 50,
         });
     </script>
