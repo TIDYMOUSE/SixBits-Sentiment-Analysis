@@ -1,3 +1,8 @@
+#####################NOTES###################
+# Following does require a lot of new dependencies
+# Please do not install without wifi as torch, spacy and transformers are large modules
+
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch.nn.functional as F
 from transformers import pipeline
