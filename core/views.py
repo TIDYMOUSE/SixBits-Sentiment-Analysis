@@ -11,11 +11,11 @@ TRENDS = {trend.post_trend for trend in Post.objects.all()}
 
 
 def homePage(request):
-    return HttpResponse("This is home page")
+    return render(request, "core/intro_page.html")
 
 
 def personalityPage(request):
-    return HttpResponse("This is personality page")
+    return render(request, "core/analyze.html")
 
 
 def postsPage(request):
