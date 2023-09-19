@@ -15,7 +15,7 @@ def homePage(request):
 
 
 def personalityPage(request):
-    return render(request, "core/analyze.html")
+    return render(request, "posts/analyse.html")
 
 
 def postsPage(request):
