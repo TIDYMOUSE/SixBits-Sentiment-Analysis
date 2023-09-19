@@ -38,9 +38,7 @@
       <i class="fa-solid fa-arrow-trend-up" style="color:white"></i>
     </div>
     <div class="container1">
-      <div class="positive">
-      <div class="name1"><b>Positive Posts</b></div>
-    </div>
+      
     <div class="contain1"> 
      {% for post in posts %}
      
@@ -48,6 +46,7 @@
        {{post.post_code}}
       </div>
       <div class="post">
+        
       </div>
       <script>
         document.querySelector(".post").innerHTML += document.getElementById("disposable").innerText
@@ -56,15 +55,13 @@
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
      {% endfor %}
     </div>
-    <div class="negative">
-      <div class="name2"><b>Negative Posts</b></div>
-    </div>
-    <div class="contain2">
+   
+    <!-- <div class="contain2">
       This is anushkas code
       {% for trend in trends %}
       <p>{{trend}}</p>
       {% endfor %}
-    </div>
+    </div> -->
     </div>
     
     
