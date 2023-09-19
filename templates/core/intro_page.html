@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -87,6 +88,7 @@
           font-size: 20px;
           cursor: pointer;
           font-weight: bolder;
+          text-decoration: none;
 
        }
         .rightSection {
@@ -130,11 +132,11 @@
                 <div> Your Guide to Emotion-Driven Insights On</div>
                 <span id="element"></span>
                  <div class="buttons">
-                    <a href="your_link_here" class="btn">Get Started</a>
+                    <a href="{% url 'trends' %}" class="btn">Get Started</a>
                  </div>
             </div>
             <div class="rightSection">
-                <img src="ab.png" alt="">
+                <img src="{% static 'images/ab.png'%}" alt="homeImg">
             </div>
         </section>
     </main>
