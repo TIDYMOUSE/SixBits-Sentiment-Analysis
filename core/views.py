@@ -20,4 +20,12 @@ def postsPage(request):
 
 
 def trendsPage(request):
-    return HttpResponse("This is personality page")
+    return render(request, "trends/posts.html")
+
+
+def about_us(request):
+    return render(request, 'core/About.html')
+
+
+def contact_us(request):
+    return render(request, 'core/contact_us.html')

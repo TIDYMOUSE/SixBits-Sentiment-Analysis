@@ -170,12 +170,10 @@ font-family: 'Ubuntu', sans-serif;
      <div class="left">Sentimental Analysis</div>
       <div class="right"></div>
       <ul>
-          <li> <a href="/">Home</li></a>
-          <li> <a href="/">About</li></a>
-          <li> <a href="/">Analyse</li></a>
-         
-          <li> <a href="/">Trending</li></a>
-          <li> <a href="/">Support</li></a>
+        <li> <a href="{% url 'home' %}">Home</li></a>
+        <li> <a href="{% url 'about-us' %}">About</li></a>
+        <li> <a href="/">Analyse</li></a>
+        <li> <a href="{% url 'trends' %}">Trending</li></a>
       </ul>
   </nav>
 <div class="about-section">

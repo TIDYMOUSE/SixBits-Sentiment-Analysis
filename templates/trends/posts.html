@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="posts.css" />
+    <link rel="stylesheet" href="{% static 'styles/posts.css' %}" />
   </head>
   <body>
     
@@ -24,17 +25,13 @@
             <div class="left">Sentimental Analysis</div>
             <div class="right"></div>
             <ul>
-                <li> <a href="/">Home</li></a>
-                <li> <a href="/">About</li></a>
+                <li> <a href="{% url 'home' %}">Home</li></a>
+                <li> <a href="{% url 'about-us' %}">About</li></a>
                 <li> <a href="/">Analyse</li></a>
-                <li> <a href="/">Trending</li></a>
+                <li> <a href="{% url 'trends' %}">Trending</li></a>
                 <li> <a href="/">Support</li></a>
             </ul>
         </nav>
-    
-   
-      
-
 
     <div class="title">
       <h1>Trending Posts</h1>
