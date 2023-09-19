@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -41,23 +41,25 @@ html {
   margin: 8px;
   border-radius: 16px;
   font-family: 'Ubuntu', sans-serif;
-
+  height: 450px;
   
 }
 
 .about-section {
+  display: inline;
   padding: 2px;
   text-align: center;
   background-color:white;
   color: rgb(19, 19, 44);
   width: 50%;
-  margin: 2px 514px;
   padding-bottom: 2px;
-
+  
 }
 
 .container {
   padding: 0 16px;
+  text-align: center;
+  justify-content: center;
 }
 
 .container::after, .row::after {
@@ -132,7 +134,7 @@ nav {
           margin-top: 11px;
         }
         .img1{
-          height:258px
+          height:300px
         }
         .material-icons {
   font-size: 24px;
@@ -160,8 +162,6 @@ font-family: 'Ubuntu', sans-serif;
 </head>
 <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -170,14 +170,14 @@ font-family: 'Ubuntu', sans-serif;
      <div class="left">Sentimental Analysis</div>
       <div class="right"></div>
       <ul>
-        <<li> <a href="{% url 'home' %}">Home</li></a>
+        <li> <a href="{% url 'home' %}">Home</li></a>
         <li> <a href="{% url 'about-us' %}">About</li></a>
         <li> <a href="{% url 'analyse' %}">Analyse</li></a>
         <li> <a href="{% url 'trends' %}">Trending</li></a>
-                <li> <a href="/">Support</li></a>
+                <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
       </ul>
   </nav>
-<div class="about-section">ś
+<div class="about-section" >
   <h2 style="text-align: center; font-weight: bold;">Our Team</h2>
   </div>
   <div class="row">

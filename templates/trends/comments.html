@@ -112,11 +112,11 @@
             </div>
             <div class="right"></div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Analyze</a></li>
-                <li><a href="/">Trending</a></li>
-                <li><a href="/">Support</a></li>
+                <li> <a href="{% url 'home' %}">Home</li></a>
+        <li> <a href="{% url 'about-us' %}">About</li></a>
+        <li> <a href="{% url 'analyse' %}">Analyse</li></a>
+        <li> <a href="{% url 'trends' %}">Trending</li></a>
+                <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
             </ul>
         </nav>
         <div class="topic-heading">Your Topic Heading Goes Here</div>
