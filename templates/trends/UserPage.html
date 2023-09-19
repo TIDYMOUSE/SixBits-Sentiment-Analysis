@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+  font-family:'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color:rgb(3, 3, 58) ;
+  color: black;
+  overflow-x: hidden;
+}
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(19, 19, 44);
+        position: sticky;
+        top: 0;
+        z-index: 0;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(168, 132, 235);
+        font-size: 1.02rem;
+      }
+      .left {
+            font-size: 2rem;
+          
+            color: white
+        }
+        .container1{
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .title{
+            background-color: rgb(125, 125, 207);
+            color: white;
+            width: 20vw;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            border-radius: 20px;
+            font-size: larger;
+        }
+        .container2{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:flex-start;
+        }
+        .posts{
+            border: 2px solid white;
+            color: white;
+            width: 45vw;
+            border-radius: 12px;
+            padding: 15px;
+            height: 85vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <nav>
+     <div class="left">Sentimental Analysis</div>
+      <div class="right"></div>
+      <ul>
+        <li> <a href="{% url 'home' %}">Home</li></a>
+        <li> <a href="{% url 'about-us' %}">About</li></a>
+        <li> <a href="{% url 'analyse' %}">Analyse</li></a>
+        <li> <a href="{% url 'trends' %}">Trending</li></a>
+                <li> <a href="/">Support</li></a>
+      </ul>
+  </nav>
+  <div class="container1">
+    <div class="title"><b>User's Recent Posts</b></div>
+  </div>
+  <div class="container2">
+    <div class="posts">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptatem architecto vero consequuntur, facilis explicabo et libero culpa! Commodi aperiam repellendus vel voluptates itaque, iusto sit perspiciatis quidem sint ex fugiat debitis quasi expedita qui inventore nobis illum fuga dolore minima facilis voluptatum vero optio. Et eius numquam deserunt ullam dolore a blanditiis placeat temporibus corporis, nesciunt sit exercitationem quis ratione. Quod dolorum explicabo in quisquam velit non aliquid iusto ipsam. Maiores eaque voluptates et delectus in necessitatibus? Aliquam repellat alias quaerat veritatis quod rem vitae, suscipit fugiat laborum ducimus minus praesentium minima facilis temporibus aperiam fugit soluta assumenda rerum distinctio obcaecati! Ut officia voluptates tempora temporibus eius iusto perferendis veritatis voluptatem ipsam, animi reprehenderit corrupti cupiditate nesciunt illo mollitia dolorem dolor necessitatibus, expedita aspernatur beatae. Recusandae ducimus nemo temporibus quaerat consequatur, consequuntur tempora laudantium quia accusamus ullam eligendi minima molestiae quos neque nulla veniam illum sed dolor velit placeat iusto excepturi hic aliquid. Inventore, ipsa ratione repellendus deleniti obcaecati nostrum qui quidem dicta molestias consequatur itaque illum incidunt minima fugiat in ex! Illo aliquid quis, quos cupiditate est excepturi fugit voluptatibus. Numquam eligendi ea natus esse laborum cum quod placeat ipsa quo molestiae! Voluptates repellendus laborum impedit vel recusandae sequi fuga natus voluptate obcaecati? Sit eos culpa earum exercitationem voluptas, nemo sint velit repellat officia, quas in facere ipsum saepe neque rerum reiciendis voluptatibus molestiae asperiores, veritatis iusto possimus ad assumenda expedita porro! Voluptates cupiditate excepturi molestias qui nam, dignissimos hic vel sapiente numquam tempore eligendi deserunt nihil aliquid vitae magni impedit totam a architecto? Porro iste omnis officia quas eaque? Reprehenderit dolore facilis enim quisquam natus, nisi aliquid labore voluptatum necessitatibus provident adipisci corporis obcaecati accusamus, quia, at odit quod optio similique! Excepturi quis, repellendus sit, doloribus praesentium, consectetur rem nobis incidunt perferendis sunt vero veniam minima consequatur. Corporis totam, veritatis enim nam error maiores culpa sit cum, ab, natus harum quia id quisquam voluptate! Eum consequatur qui corporis esse? Molestias tempora eligendi expedita asperiores amet cum aspernatur. Quas, perferendis vitae? Delectus esse praesentium laboriosam voluptatum corporis blanditiis cupiditate perspiciatis fugiat dolorem?
+    </div>
+  </div>
+  </body>
+</html>
