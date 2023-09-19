@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analyse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 44);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(168, 132, 235);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .topic-heading {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 225px;
+        }
+
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .input-box {
+            width: 1000px;
+
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+
+        #text-input {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #analyze-button {
+            background-color: rgb(154, 154, 179);
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 70px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-color: aliceblue;
+        }
+    </style>
+    <script>
+          const analyzeButton = document.getElementById('analyze-button');
+        const textInput = document.getElementById('text-input');
+
+        analyzeButton.addEventListener('click', () => {
+          // Get the text from the text input
+          const text = textInput.value;
+
+          // Perform sentiment analysis on the text
+          const sentiment = sentimentAnalysis(text);
+
+          // Display the result of the sentiment analysis
+          // ...
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="left">
+                Sentimental Analysis
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Analyze</a></li>
+                <li><a href="/">Trending</a></li>
+                <li><a href="/">Support</a></li>
+            </ul>
+        </nav>
+        <div class="topic-heading">Enter social media content here</div>
+    </header>
+    <main>
+        <div class="input-box">
+            <textarea id="text-input" placeholder="Enter social media content here"></textarea>
+            <button type="button" id="analyze-button">Analyze Sentiment</button>
+        </div>
+    </main>
+</body>
+
+</html>
