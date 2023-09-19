@@ -1,223 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-<style>
-*{
-  margin: 0px;
-  padding: 0px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
 
-body {
-  font-family:'Poppins', Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color:white ;
-  color: black;
-}
+    body {
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
 
-html {
-  box-sizing: border-box;
-}
+    html {
+      box-sizing: border-box;
+    }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
 
-}
+    }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  border-radius: 16px;
-  font-family: 'Ubuntu', sans-serif;
-  height: 450px;
-  
-}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      border-radius: 16px;
+      font-family: 'Ubuntu', sans-serif;
+      height: 450px;
 
-.about-section {
-  display: inline;
-  padding: 2px;
-  text-align: center;
-  background-color:white;
-  color: rgb(19, 19, 44);
-  width: 50%;
-  padding-bottom: 2px;
-  
-}
+    }
 
-.container {
-  padding: 0 16px;
-  text-align: center;
-  justify-content: center;
-}
+    .about-section {
+      display: inline;
+      padding: 2px;
+      text-align: center;
+      background-color: white;
+      color: rgb(19, 19, 44);
+      width: 50%;
+      padding-bottom: 2px;
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  border-radius: 16px;
-}
+    }
 
-.title {
-  color: grey;
-}
+    .container {
+      padding: 0 16px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      border-radius: 16px;
+    }
+
+    .title {
+      color: grey;
+    }
 
 
 
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
 
-}
-nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color:rgb(19, 19, 44);
-            position: sticky;
-    top: 0;
-    z-index: 0;
-        }
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(19, 19, 44);
+      position: sticky;
+      top: 0;
+      z-index: 0;
+    }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
 
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
 
-        nav ul li a:hover {
+    }
 
-            color: rgb(168, 132, 235);
-            font-size: 1.02rem;
+    nav ul li a:hover {
 
-        }
+      color: rgb(168, 132, 235);
+      font-size: 1.02rem;
 
-        .left {
-            font-size: 2rem;
-          
-            color: white
-        }
+    }
 
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
-        p,h2,h1{
-          text-align:center;
-          margin-top: 11px;
-        }
-        .img1{
-          height:300px
-        }
-        .material-icons {
-  font-size: 24px;
-  color: red;
-}
-.tag{
-  color: white;
-font-weight: bolder;
-font-size:xx-large;
-text-align: center;
-margin: 0px 823px;
-padding: 0px 2px;
-background-color:  rgb(168, 132, 235);
-width: 504px;
-border-radius: 26px;
-font-family: 'Ubuntu', sans-serif;
-}
-.benifit li{
-  text-align: center;
-  padding:7px 2px;
-  /* -- */
-}
-      
-</style>
+    .left {
+      font-size: 2rem;
+
+      color: white
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 80px 0;
+    }
+
+    p,
+    h2,
+    h1 {
+      text-align: center;
+      margin-top: 11px;
+    }
+
+    .img1 {
+      height: 300px
+    }
+
+    .material-icons {
+      font-size: 24px;
+      color: red;
+    }
+
+    .tag {
+      color: white;
+      font-weight: bolder;
+      font-size: xx-large;
+      text-align: center;
+      margin: 0px 823px;
+      padding: 0px 2px;
+      background-color: rgb(168, 132, 235);
+      width: 504px;
+      border-radius: 26px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .benifit li {
+      text-align: center;
+      padding: 7px 2px;
+      /* -- */
+    }
+  </style>
 </head>
+
 <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <nav>
-     <div class="left">Sentimental Analysis</div>
-      <div class="right"></div>
-      <ul>
-        <li> <a href="{% url 'home' %}">Home</li></a>
-        <li> <a href="{% url 'about-us' %}">About</li></a>
-        <li> <a href="{% url 'analyse' %}">Analyse</li></a>
-        <li> <a href="{% url 'trends' %}">Trending</li></a>
-                <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
-      </ul>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <nav>
+    <div class="left">Sentimental Analysis</div>
+    <div class="right"></div>
+    <ul>
+      <li> <a href="{% url 'home' %}">Home</li></a>
+      <li> <a href="{% url 'about-us' %}">About</li></a>
+      <li> <a href="{% url 'analyse' %}">Analyse</li></a>
+      <li> <a href="{% url 'trends' %}">Trending</li></a>
+      <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
+    </ul>
   </nav>
-<div class="about-section" >
-  <h2 style="text-align: center; font-weight: bold;">Our Team</h2>
+  <div class="about-section">
+    <h2 style="text-align: center; font-weight: bold;">Our Team</h2>
   </div>
   <div class="row">
     <div class="column">
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2022/11/30/20/41/elephant-7627674_1280.jpg" alt="Sanskar" style="width:100%">
+        <img src="https://cdn.pixabay.com/photo/2022/11/30/20/41/elephant-7627674_1280.jpg" alt="Sanskar"
+          style="width:100%">
         <div class="container">
           <h2>Sanskar Wakchaure</h2>
           <p class="title">S.Y. Btech CS, VJTI | Frontend Developer</p>
-          
+
           <p>sanskarwakchaure7@gamil.com</p>
           <p><i class="fa fa-phone" style="color: blue; padding-right: 10px;"></i>9819219560</p>
-        
+
         </div>
       </div>
     </div>
-  
+
     <div class="column">
       <div class="card">
-        <img src="https://media.istockphoto.com/id/1478313319/photo/male-lion.webp?s=2048x2048&w=is&k=20&c=K7ZhQgskKgMcNyQfUEsc5nb05mFmuRTXxHqFffIWbAc=" alt="Anushka" style="width:100%" class="img4">
+        <img
+          src="https://media.istockphoto.com/id/1478313319/photo/male-lion.webp?s=2048x2048&w=is&k=20&c=K7ZhQgskKgMcNyQfUEsc5nb05mFmuRTXxHqFffIWbAc="
+          alt="Anushka" style="width:100%" class="img4">
         <div class="container">
           <h2>Anushka Yadav</h2>
           <p class="title">S.Y. Btech CS, VJTI | Frontend Developer</p>
           <p>anushkasy2003@gmail.com</p>
           <p><i class="fa fa-phone" style="color: blue; padding-right: 10px;"></i> 7774034345</p>
-       
+
         </div>
       </div>
     </div>
-  
+
     <div class="column">
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Peacock_Plumage.jpg" alt="Richa" style="width:100%" class="img1" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Peacock_Plumage.jpg" alt="Richa"
+          style="width:100%" class="img1">
         <div class="container">
           <h2>Richa Sawant</h2>
           <p class="title">S.Y. Btech CS, VJTI | Frontend Developer</p>
           <p>richasawant2004@gmail.com
           </p>
           <p><i class="fa fa-phone" style="color: blue; padding-right: 10px;"></i> 8291490751</p>
-          
+
         </div>
       </div>
     </div>
@@ -225,45 +241,51 @@ font-family: 'Ubuntu', sans-serif;
   <div class="row">
     <div class="column">
       <div class="card">
-        <img src="https://files.worldwildlife.org/wwfcmsprod/images/Sloth_3_12_2014/hero_full/95bi8m2u6i_sloth__c__Jorge_Salas_International_Expeditions.JPG" alt="Advait" style="width:100%" class="img1">
+        <img
+          src="https://files.worldwildlife.org/wwfcmsprod/images/Sloth_3_12_2014/hero_full/95bi8m2u6i_sloth__c__Jorge_Salas_International_Expeditions.JPG"
+          alt="Advait" style="width:100%" class="img1">
         <div class="container">
           <h2>Advait Yadav</h2>
           <p class="title"> Backend Developer | S.Y. Btech Vjti Cs | This unit is just stylin'</p>
           <p><span class="material-icons"></span>advaityadav08@gmail.com</p>
           <p><i class="fa fa-phone" style="color: blue; padding-right: 10px;"></i>7715051236</p>
-          
-        
+
+
         </div>
       </div>
     </div>
-  
+
     <div class="column">
       <div class="card">
-        <img src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg" alt="Warren" style="width:100%" class="img1">
+        <img
+          src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg"
+          alt="Warren" style="width:100%" class="img1">
         <div class="container">
           <h2>Warren Jacinto</h2>
           <p class="title">About me : S.Y. Btech Vjti Cs | ML enthusiast</p>
           <p>warrenjacinto@gmail.com</p>
           <p><i class="fa fa-phone" style="color: blue; padding-right: 10px;"></i> 9594106424</p>
-       
+
         </div>
       </div>
     </div>
-  
+
     <div class="column">
       <div class="card">
-        <img src="https://www.kalmbachfeeds.com/wp-content/uploads/2022/02/Kalmbach-Duck-Article-2.4.22-1024x536.jpg" alt="tvisha" style="width:100%" class="img1">
+        <img src="https://www.kalmbachfeeds.com/wp-content/uploads/2022/02/Kalmbach-Duck-Article-2.4.22-1024x536.jpg"
+          alt="tvisha" style="width:100%" class="img1">
         <div class="container">
           <h2>Tvisha Vedant</h2>
           <p class="title">Sophomore at VJTI| studying computer science |Ai ml enthusiast..</p>
           <p>tvishavedant@gmail.com</p>
           <p><i class="fa fa-phone" style="color: blue; padding-right: 10px;"></i>8169642094</p>
-          
+
         </div>
       </div>
     </div>
   </div>
 
 
-  </body>
-  </html>
+</body>
+
+</html>

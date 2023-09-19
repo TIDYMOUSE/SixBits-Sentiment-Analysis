@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/f7cba8286e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body{
-            background-color:  rgb(19, 19, 34);
-            font-family:'Poppins', Arial, Helvetica, sans-serif;
-  margin: 0;
+        body {
+            background-color: rgb(19, 19, 34);
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            margin: 0;
         }
-        *{
+
+        * {
             margin: 0;
             padding: 0;
-            font-family:'Poppins',sans-serif;
+            font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
         }
-        .contact{
+
+        .contact {
             position: relative;
             min-height: 60vh;
             padding: 0px 100px;
@@ -32,33 +36,38 @@
             background: url(pexels-daniel-absi-952670.jpeg);
             background-size: cover;
         }
-        .content{
+
+        .content {
             max-width: 800px;
-            padding:6px 2px;
+            padding: 6px 2px;
             text-align: center;
             /* display: flex; */
-            
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 119px;
 
-            
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 119px;
+
+
         }
-        .content h2{
+
+        .content h2 {
             font-size: 36px;
             font-weight: 500;
             color: white;
         }
-        .content p{
-            
+
+        .content p {
+
             font-weight: 500;
-            color:white;
+            color: white;
         }
-        p{
+
+        p {
             font-weight: 300;
             padding-top: 10px;
         }
-        .container{
+
+        .container {
             width: 100%;
             /* height: 80%; */
             display: flex;
@@ -67,87 +76,96 @@
             align-items: center;
             /* margin-top: ; */
         }
-        .contacinfo{
+
+        .contacinfo {
             width: 50%;
             display: flex;
-             flex-direction: column;
+            flex-direction: column;
         }
-     .box{
+
+        .box {
             position: relative;
             display: flex;
-            width:100%;
+            width: 100%;
             /* align-items:left; */
-            padding: 20px 0px;        
+            padding: 20px 0px;
         }
-        .icon
-        {
-            min-width:60px;
+
+        .icon {
+            min-width: 60px;
             height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background:white;
+            background: white;
             border-radius: 50%;
             font-size: 22px
         }
-        .text{
+
+        .text {
             display: flex;
             margin-left: 20px;
             font-size: 16px;
-            color:white;
+            color: white;
             flex-direction: column;
             font-weight: 300;
         }
-        .h3{
+
+        .h3 {
             font-weight: 800;
             color: white;
             width: 180px;
             font-size: larger;
 
         }
-        .contactform
-        {
+
+        .contactform {
             width: 40%;
             padding: 40px;
             margin-left: 258px;
-            background:white;
+            background: white;
             /* font-weight: 500; */
             /* display: flex;
             justify-content: left;
             align-items:right; */
-            border-radius:8px ;
+            border-radius: 8px;
         }
-        .contactform h2{
+
+        .contactform h2 {
             font-size: 30px;
-            color:#333;
+            color: #333;
             font-weight: 500;
         }
-        .inputbox{
+
+        .inputbox {
             position: relative;
             width: 100%;
             margin-top: 10px;
         }
-        input{
-            width:100%;
-            padding: 5px 0; 
-            font-size: 16px;      
-            margin:10px 0 ;
+
+        input {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
             border: none;
             border-bottom: 2px solid #333;
             outline: none;
 
         }
-        textarea{
-            width:100%;
-            padding: 5px 0; 
-            font-size: 16px;      
-            margin:10px 0 ;
+
+        textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
             border: none;
             border-bottom: 2px solid #333;
             outline: none;
             resize: none;
         }
-        span{
+
+        span {
             position: absolute;
             left: 0px;
             padding: 5px 0;
@@ -157,14 +175,15 @@
             transition: 0.5%;
             color: #666;
         }
-        input:focus ~span,textarea:focus~span
-        {
-            color:#e91e63;
+
+        input:focus~span,
+        textarea:focus~span {
+            color: #e91e63;
             font-size: 12px;
             transform: translateY(-20px);
         }
-        input[type="submit"]
-        {
+
+        input[type="submit"] {
             width: 100px;
             background: #00bcd4;
             color: #fff;
@@ -174,19 +193,20 @@
             font-size: 18px;
             border-radius: 4px;
         }
-        input[type="submit"]:hover
-        {
-            color:grey;
+
+        input[type="submit"]:hover {
+            color: grey;
         }
+
         nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color:rgb(19, 19, 44);
+            background-color: rgb(19, 19, 44);
             position: sticky;
-    top: 0;
-    z-index: 0;
+            top: 0;
+            z-index: 0;
         }
 
         nav ul {
@@ -207,14 +227,14 @@
 
         nav ul li a:hover {
 
-            color: rgb(19, 19, 44);
+            color: rgb(168, 132, 235);
             font-size: 1.02rem;
 
         }
 
         .left {
             font-size: 2rem;
-          
+
             color: white
         }
 
@@ -224,81 +244,80 @@
             align-items: center;
             margin: 80px 0;
         }
-        .content h2{
-            font-size:600;
+
+        .content h2 {
+            font-size: 600;
         }
-        
+
         /* @media(max-width:991px) */
-                
     </style>
 </head>
+
 <body>
     <nav>
-            <div class="left">Sentimental Analysis</div>
-            <div class="right"></div>
-            <ul>
-                <li> <a href="{% url 'home' %}">Home</li></a>
-        <li> <a href="{% url 'about-us' %}">About</li></a>
-        <li> <a href="{% url 'analyse' %}">Analyse</li></a>
-        <li> <a href="{% url 'trends' %}">Trending</li></a>
-                <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
-            </ul>
-        </nav>
- <section class="contact">
-    <div class="content">
-        <h2 class="contacth2">Contact Us</h2>
-        <p style="color:grey">Feel free to ask,Its our Duty!!!.</p>
-    </div>
-    <div class="container">
-        <div class="contentinfo">
-            <div class="box">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div class="left">Sentimental Analysis</div>
+        <div class="right"></div>
+        <ul>
+            <li> <a href="{% url 'home' %}">Home</li></a>
+            <li> <a href="{% url 'about-us' %}">About</li></a>
+            <li> <a href="{% url 'analyse' %}">Analyse</li></a>
+            <li> <a href="{% url 'trends' %}">Trending</li></a>
+            <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
+        </ul>
+    </nav>
+    <section class="contact">
+        <div class="content">
+            <h2 class="contacth2">Contact Us</h2>
+            <p style="color:grey">Feel free to ask,Its our Duty!!!.</p>
+        </div>
+        <div class="container">
+            <div class="contentinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                     <div class="text">
                         <h2>Address</h2>
                         <p>VJTI</br>Matunga.</p>
                     </div>
-                
-            </div>
-            <div class="box">
-                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                     <div class="text">
                         <h2>Email</h2>
                         <p>company@gmail.com</p>
                     </div>
                 </div>
-            
-            <div class="box">
-                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     <div class="text">
                         <h2>Mobile No:</h2>
                         <p>123456789</p>
                     </div>
                 </div>
-                </div>
-                
-                <div class="contactform">
-                    <form>
-<h3 class="h3"> Send Message</h3>
-<div class="inputbox">
-    <input type="text" required="required"></span>
-    <span>Full Name</span>
-</div>
-<div class="inputbox">
-    <input type="text" required="required"></span>
-    <span>Email</span>
-</div>
-<div class="inputbox">
-    <textarea type="text" required="required"></textarea>
-    <span>Type your Message.....</span>
-</div>
-<div class="inputbox">
-    <input type="submit" value="submit"></span>
-    
-</div>
-                    </form>
-                </div>
-            
+            </div>
 
- </section>     
+            <div class="contactform">
+                <form>
+                    <h3 class="h3"> Send Message</h3>
+                    <div class="inputbox">
+                        <input type="text" required="required" placeholder="Full name"></span>
+
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required="required" placeholder="Email"></span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea type="text" required="required" placeholder="Type your message ..."></textarea>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="ascapital"></span>
+                    </div>
+                </form>
+            </div>
+
+
+    </section>
 </body>
+
 </html>

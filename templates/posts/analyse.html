@@ -93,18 +93,18 @@
         }
     </style>
     <script>
-          const analyzeButton = document.getElementById('analyze-button');
+        const analyzeButton = document.getElementById('analyze-button');
         const textInput = document.getElementById('text-input');
 
         analyzeButton.addEventListener('click', () => {
-          // Get the text from the text input
-          const text = textInput.value;
+            // Get the text from the text input
+            const text = textInput.value;
 
-          // Perform sentiment analysis on the text
-          const sentiment = sentimentAnalysis(text);
+            // Perform sentiment analysis on the text
+            const sentiment = sentimentAnalysis(text);
 
-          // Display the result of the sentiment analysis
-          // ...
+            // Display the result of the sentiment analysis
+            // ...
         });
     </script>
 </head>
@@ -120,7 +120,7 @@
                 <li> <a href="{% url 'about-us' %}">About</li></a>
                 <li> <a href="{% url 'analyse' %}">Analyse</li></a>
                 <li> <a href="{% url 'trends' %}">Trending</li></a>
-                        <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
+                <li> <a href="{% url 'contact-us'%}">Contact Us</li></a>
             </ul>
         </nav>
         <div class="topic-heading">Enter social media content here</div>
