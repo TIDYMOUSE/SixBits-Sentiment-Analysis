@@ -17,9 +17,21 @@ def homePage(request):
 
 
 def analyzePage(request):
-    senti = []
-    if request.method == "POST":
-        senti.append(sentiment_analysis.analyze_senti(request.POST.get("Advait")))
+    
+    senti = {}
+    if request.method == "POST":    
+        senti = sentiment_analysis.analyze_senti(request.POST.get("Advait"))
+        print("SENTI DICT", senti)
+        for noun, values in senti.items():
+            emotion = "Null"
+            value = 0.00
+            for emo, val in values.items():
+                if val > value:
+                    value = val
+                    emotion = emo
+
+            senti[noun] = dict({emotion : value})
+
 
     context ={
         "senti":senti

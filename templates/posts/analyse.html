@@ -148,13 +148,6 @@
     </header>
     <main>
       <div class="input-box">
-<<<<<<< HEAD
-        <textarea
-          id="text-input"
-          placeholder="Enter your social media content here"
-        ></textarea>
-        <button type="button" id="analyze-button">Analyze Sentiment</button>
-=======
         <form method="POST" >
           {%csrf_token%}
         <input type="text" name="Advait" placeholder="Enter text to be analyzed here...">
@@ -163,8 +156,13 @@
         </form>
       </div>
       <div>
-        {{senti}}
->>>>>>> 808a2c9a9ff37ade69b05fc93af27ba9a3595b7b
+          {% for topic, sentiment in senti.items %}
+            {% for emotion, deg in sentiment.items %}
+              <p>
+                  Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}
+              </p>
+            {% endfor %}
+          {% endfor %}
       </div>
     </main>
   </body>
