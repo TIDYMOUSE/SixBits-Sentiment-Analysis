@@ -8,7 +8,7 @@
     display: flex;
     font-family: 'Poppins', sans-serif;
     padding: 18px;
-    width: 34vw;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -43,18 +43,18 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .contain1{
-    width: 43vw;
+    width: 49vw;
     height: 85vh;
-    border-radius: 12px;
+    border-radius: 10px;
     background-color: rgb(3, 3, 58);
-    /* margin: 9px; */
-    overflow-y: scroll;
+    margin-right: 100px;
+    /* overflow-y: scroll; */
     overflow-x: hidden;
     /* scrollbar-width:thin; */
     padding: 15px;
     border: 2px solid white;
     color: white;
-    
+    scrollbar-width: thin;
 }
 .negative{
     display: flex;
@@ -90,12 +90,12 @@ body{
     color: white;
 }
 .container1{
-    width: 66vw;
+    width: 100vw;
     height: 100vh;
     display:flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     /* justify-content: center; */
-    align-items: center;
+    align-items: flex-start;
     padding: 0px;
     margin-top: 71px;
     margin-bottom: 35px;
@@ -104,10 +104,7 @@ body{
 .left {
     font-size: 2rem;
 }
-.box{
-    display: flex;
-    flex-direction: row;
-}
+
  nav {
      display: flex;
      justify-content: space-around;
@@ -148,4 +145,34 @@ body{
      font-size: 1.02rem;
     font-family: 'Poppins', sans-serif;
 
+ }
+ .trends-only{
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    margin-top: 100px;
+    text-decoration: none;
+ }
+ .trends-only a{
+    text-decoration: none;
+    color: #BF94E4;
+    border: 2px solid #BF94E4;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+ }
+ .post a{
+    text-decoration: none;
+    color: #BF94E4;
+    border: 2px solid #BF94E4;
+        margin: 8px;
+        padding: 5px;
+        border-radius: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    
  }
