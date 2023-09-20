@@ -57,7 +57,7 @@
       .topic-heading {
         text-align: center;
         font-size: 2rem;
-        margin-top: 225px;
+        margin-top: 150px;
       }
 
       .sticky-nav {
@@ -69,9 +69,14 @@
 
       .input-box {
         width: 1000px;
-
+        font-size: 15px;
         margin: 0 auto;
         margin-top: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
 
       #text-input {
@@ -79,19 +84,28 @@
         height: 200px;
         padding: 10px;
         font-size: 16px;
-        border-radius: 5px;
+        border-radius: 20px;
+        border: 5px solid rgb(125, 125, 207);
       }
 
       #analyze-button {
-        background-color: rgb(154, 154, 179);
-        color: black;
+        background-color: rgb(125, 125, 207);
+        color: white;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 20px;
         cursor: pointer;
-        margin-top: 70px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        border-color: aliceblue;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        /* border-color: aliceblue; */
+        border: none;
+        margin-bottom: 40px;
+        font-family: "Poppins", sans-serif;
+      }
+      .topic {
+        color: #bf94e4;
+        text-align: center;
+        margin-bottom: 15px;
       }
     </style>
     <script>
@@ -123,13 +137,20 @@
           <li><a href="{% url 'contact-us'%}">Contact Us</a></li>
         </ul>
       </nav>
-      <div class="topic-heading">Enter social media content here</div>
+
+      <div class="topic-heading">
+        <div class="topic"><p>Let's Customize..</p></div>
+        <p style="font-size: 1.1rem">
+          You can enter your favourite social media content in the box below and
+          find out it's sentiment
+        </p>
+      </div>
     </header>
     <main>
       <div class="input-box">
         <textarea
           id="text-input"
-          placeholder="Enter social media content here"
+          placeholder="Enter your social media content here"
         ></textarea>
         <button type="button" id="analyze-button">Analyze Sentiment</button>
       </div>
