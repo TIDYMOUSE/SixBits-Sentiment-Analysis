@@ -108,21 +108,6 @@
         margin-bottom: 15px;
       }
     </style>
-    <script>
-      const analyzeButton = document.getElementById("analyze-button");
-      const textInput = document.getElementById("text-input");
-
-      analyzeButton.addEventListener("click", () => {
-        // Get the text from the text input
-        const text = textInput.value;
-
-        // Perform sentiment analysis on the text
-        const sentiment = sentimentAnalysis(text);
-
-        // Display the result of the sentiment analysis
-        // ...
-      });
-    </script>
   </head>
 
   <body>
@@ -148,21 +133,22 @@
     </header>
     <main>
       <div class="input-box">
-        <form method="POST" >
+        <form method="POST">
           {%csrf_token%}
-        <input type="text" name="Advait" placeholder="Enter text to be analyzed here...">
-        <input type="submit" value="analyze sentiment">
-        <!-- <button type="button" id="analyze-button">Analyze Sentiment</button> -->
+          <input
+            type="text"
+            name="Advait"
+            placeholder="Enter text to be analyzed here..."
+          />
+          <input type="submit" value="analyze sentiment" />
+          <!-- <button type="button" id="analyze-button">Analyze Sentiment</button> -->
         </form>
       </div>
       <div>
-          {% for topic, sentiment in senti.items %}
-            {% for emotion, deg in sentiment.items %}
-              <p>
-                  Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}
-              </p>
-            {% endfor %}
-          {% endfor %}
+        {% for topic, sentiment in senti.items %} {% for emotion, deg in
+        sentiment.items %}
+        <p>Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}</p>
+        {% endfor %} {% endfor %}
       </div>
     </main>
   </body>
