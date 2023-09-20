@@ -1,5 +1,3 @@
-
-<<<<<<< HEAD
 =======
 1. Latest Python version
 2. Run following command in terminal to install django :
@@ -44,4 +42,4 @@ Run following command in termninal :-
 ```shell
 python manage.py runserver
 ```
->>>>>>> 06196fdd1bcaa88584b64449b090b5ce09f83f03
+
