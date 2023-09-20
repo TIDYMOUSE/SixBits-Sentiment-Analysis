@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Post
 from django.db.models import Q
+from . import sentiment_analysis
 
 # Create your views here.
 
@@ -15,8 +16,15 @@ def homePage(request):
     return render(request, "core/intro_page.html")
 
 
-def personalityPage(request):
-    return render(request, "posts/analyse.html")
+def analyzePage(request):
+    senti = []
+    if request.method == "POST":
+        senti.append(sentiment_analysis.analyze_senti(request.POST.get("Advait")))
+
+    context ={
+        "senti":senti
+    }
+    return render(request, "posts/analyse.html", context)
 
 
 def UserPage(request, user):
@@ -33,11 +41,17 @@ def UserPage(request, user):
 def trendsPage(request):
 
     q = request.GET.get("q") if request.GET.get("q") != None else ''
+    posts = Post.objects.all()
+    senti = {}
+    
+    for post in posts:
+        print(post.pk)
+        senti[post.pk] = sentiment_analysis.analyze_senti(post.post_text)
 
-    post = Post.objects.all()
-
+    print(senti)
     context = {
-        "posts": post,
+        "posts": posts,
+        "senti" : senti,
         "trends": TRENDS,
     }
 
