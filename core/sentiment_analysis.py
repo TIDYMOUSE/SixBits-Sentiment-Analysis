@@ -11,8 +11,8 @@ import spacy
 ### Dependencies
 # pip install torch ~600mb
 # pip install protobuf ~10mb
-# pip install transformers
-# pip install spacy
+# pip install transformers 
+# pip install spacy 
 # pip install sentencepiece
 
 

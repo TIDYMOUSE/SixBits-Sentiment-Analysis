@@ -127,11 +127,15 @@
     </header>
     <main>
       <div class="input-box">
-        <textarea
-          id="text-input"
-          placeholder="Enter social media content here"
-        ></textarea>
-        <button type="button" id="analyze-button">Analyze Sentiment</button>
+        <form method="POST" >
+          {%csrf_token%}
+        <input type="text" name="Advait" placeholder="Enter text to be analyzed here...">
+        <input type="submit" value="analyze sentiment">
+        <!-- <button type="button" id="analyze-button">Analyze Sentiment</button> -->
+        </form>
+      </div>
+      <div>
+        {{senti}}
       </div>
     </main>
   </body>

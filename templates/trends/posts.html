@@ -41,10 +41,19 @@
       </div>
       <div class="container1">
         <div class="contain1">
+          
           {% for post in posts %}
           <div id="disposable1">{{post.post_code}}</div>
           <div class="post">
             <a href="{% url 'user' post.username %}">{{post.username}}</a>
+            {% for key,value in senti.items %}
+              {% if key == post.pk %}
+              <p>
+                {{value}}
+              </p>
+              {% endif %}
+
+            {% endfor %}
           </div>
           <script>
             document.querySelectorAll(".post")[
