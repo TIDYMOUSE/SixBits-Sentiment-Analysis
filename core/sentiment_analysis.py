@@ -37,6 +37,8 @@ def analyze_senti(sentence):
     nlp = spacy.load("en_core_web_sm")
     sentence = sentence.replace("%", "")
     sentence = sentence.replace("-", "")
+    sentence = sentence.replace("#", "")
+    sentence = sentence.replace("@", "")
     doc = nlp(sentence)
     aspects = []
     out = {}
