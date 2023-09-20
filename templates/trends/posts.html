@@ -48,9 +48,13 @@
             <a href="{% url 'user' post.username %}">{{post.username}}</a>
             {% for key,value in senti.items %}
               {% if key == post.pk %}
-              <p>
-                {{value}}
-              </p>
+                {% for topic, sentiment in value.items %}
+                  {% for emotion, deg in sentiment.items %}
+                  <p>
+                    Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}
+                  </p>
+                  {% endfor %}
+                {% endfor %}
               {% endif %}
 
             {% endfor %}

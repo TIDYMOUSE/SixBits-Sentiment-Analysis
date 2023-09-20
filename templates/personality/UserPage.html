@@ -136,6 +136,18 @@
         {% for post in posts %}
         <div id="disposable">{{post.post_code}}</div>
         <div class="post"></div>
+        {% for key,value in senti.items %}
+              {% if key == post.pk %}
+                {% for topic, sentiment in value.items %}
+                  {% for emotion, deg in sentiment.items %}
+                  <p>
+                    Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}
+                  </p>
+                  {% endfor %}
+                {% endfor %}
+              {% endif %}
+
+        {% endfor %}
         <script>
           document.querySelectorAll(".post")[
             document.querySelectorAll(".post").length - 1

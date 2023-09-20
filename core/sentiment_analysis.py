@@ -35,6 +35,8 @@ def analyze_senti(sentence):
     absa_tokenizer = AutoTokenizer.from_pretrained("yangheng/deberta-v3-base-absa-v1.1")
     absa_model = AutoModelForSequenceClassification.from_pretrained("yangheng/deberta-v3-base-absa-v1.1")
     nlp = spacy.load("en_core_web_sm")
+    sentence = sentence.replace("%", "")
+    sentence = sentence.replace("-", "")
     doc = nlp(sentence)
     aspects = []
     out = {}
@@ -47,7 +49,7 @@ def analyze_senti(sentence):
         probs = F.softmax(outputs.logits, dim=1)
         probs = probs.detach().numpy()[0]
         for prob, label in zip(probs, ["negative", "neutral", "positive"]):
-            senti = {"positive ": probs[2], "neutral":probs[1], "negative" : probs[0] }
+            senti = {"positive": probs[2], "neutral":probs[1], "negative" : probs[0] }
             out[aspect] = dict(senti)
     return out
     

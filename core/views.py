@@ -30,9 +30,27 @@ def analyzePage(request):
 def UserPage(request, user):
 
     posts = Post.objects.filter(Q(username__contains=user))
+    senti = {}
+    
+    for post in posts:
+        print(post.pk)
+        senti_dict = sentiment_analysis.analyze_senti(post.post_text)
+        print("SENTI DICT", senti_dict)
+        for noun, values in senti_dict.items():
+            emotion = "Null"
+            value = 0.00
+            for emo, val in values.items():
+                if val > value:
+                    value = val
+                    emotion = emo
+
+            senti_dict[noun] = dict({emotion : value})
+        senti[post.pk] = senti_dict
+    
     context = {
         "posts": posts,
         "username": user,
+        "senti" : senti,
         "trends": TRENDS,
     }
     return render(request, "personality/UserPage.html", context)
@@ -46,7 +64,18 @@ def trendsPage(request):
     
     for post in posts:
         print(post.pk)
-        senti[post.pk] = sentiment_analysis.analyze_senti(post.post_text)
+        senti_dict = sentiment_analysis.analyze_senti(post.post_text)
+        print("SENTI DICT", senti_dict)
+        for noun, values in senti_dict.items():
+            emotion = "Null"
+            value = 0.00
+            for emo, val in values.items():
+                if val > value:
+                    value = val
+                    emotion = emo
+
+            senti_dict[noun] = dict({emotion : value})
+        senti[post.pk] = senti_dict
 
     print(senti)
     context = {
