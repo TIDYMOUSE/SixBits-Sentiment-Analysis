@@ -46,11 +46,13 @@
           <div id="disposable1">{{post.post_code}}</div>
           <div class="post">
             <a href="{% url 'user' post.username %}">{{post.username}}</a>
+            <p style="background-color: #BF94E4;color: white;font-family: 'Poppins', sans-serif;border-radius: 15px;border: none;padding: 5px;width: 18vw;margin: 15px;padding-left: 5px;"><b>Sentimental Analysis</b></p>
             {% for key,value in senti.items %}
               {% if key == post.pk %}
                 {% for topic, sentiment in value.items %}
                   {% for emotion, deg in sentiment.items %}
-                  <p>
+                  
+                  <p style="font-family: 'Poppins', sans-serif; border: 1px solid white; border-radius: 15px; margin: 15px; padding: 5px; padding-left: 5px;">
                     Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}
                   </p>
                   {% endfor %}

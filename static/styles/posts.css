@@ -43,7 +43,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .contain1{
-    width: 49vw;
+    width: 51vw;
     height: 85vh;
     border-radius: 10px;
     background-color: rgb(3, 3, 58);
@@ -175,4 +175,8 @@ body{
         font-size: 15px;
         font-weight: bold;
     
+ }
+ .post {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
  }
