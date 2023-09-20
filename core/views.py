@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Post
+from django.db.models import Q
 
 # Create your views here.
 
@@ -18,11 +19,20 @@ def personalityPage(request):
     return render(request, "posts/analyse.html")
 
 
-def postsPage(request):
-    return HttpResponse("This is personality page")
+def UserPage(request, user):
+
+    posts = Post.objects.filter(Q(username__contains=user))
+    context = {
+        "posts": posts,
+        "username": user,
+        "trends": TRENDS,
+    }
+    return render(request, "personality/UserPage.html", context)
 
 
 def trendsPage(request):
+
+    q = request.GET.get("q") if request.GET.get("q") != None else ''
 
     post = Post.objects.all()
 

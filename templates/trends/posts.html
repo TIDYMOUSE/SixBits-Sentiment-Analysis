@@ -42,16 +42,15 @@
     <div class="container1">
       <div class="contain1">
         {% for post in posts %}
-        <div id="disposable">
-          <p>Username : {{post.username}}</p>
-          {{post.post_code}}
+        <div id="disposable1">{{post.post_code}}</div>
+        <div class="post">
+          <a href="{% url 'user' post.username %}">{{post.username}}</a>
         </div>
-        <div class="post"></div>
         <script>
           document.querySelectorAll(".post")[
             document.querySelectorAll(".post").length - 1
-          ].innerHTML += document.getElementById("disposable").innerText;
-          document.getElementById("disposable").remove();
+          ].innerHTML += document.getElementById("disposable1").innerText;
+          document.getElementById("disposable1").remove();
         </script>
         <script
           async
@@ -61,12 +60,13 @@
         {% endfor %}
       </div>
 
-      <!-- <div class="contain2">
-      This is anushkas code
-      {% for trend in trends %}
-      <p>{{trend}}</p>
-      {% endfor %}
-    </div> -->
+      <div class="yourname">
+        <div class="trends-only">
+          {% for trend in trends %}
+          <a href="{% url 'trends' %}?q={{trend}}">{{trend}}</a>
+          {% endfor%}
+        </div>
+      </div>
     </div>
   </body>
 </html>
