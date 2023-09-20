@@ -7,7 +7,15 @@
 pip install django
 ```
 
-if on linux, use pip3
+3. Run following commands to install the modules needed for machine learning :
+
+```shell
+pip install torch
+pip install transformers
+pip install spacy
+pip install sentencepiece
+python -m spacy install en_core_web_sm
+```
 
 # REPO INSTRUCTIONS :-
 
