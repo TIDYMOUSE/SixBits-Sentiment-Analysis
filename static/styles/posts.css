@@ -8,7 +8,7 @@
     display: flex;
     font-family: 'Poppins', sans-serif;
     padding: 18px;
-    width: 100vw;
+    width: 34vw;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -47,13 +47,14 @@ body{
     height: 85vh;
     border-radius: 12px;
     background-color: rgb(3, 3, 58);
-    margin: 9px;
+    /* margin: 9px; */
     overflow-y: scroll;
     overflow-x: hidden;
     /* scrollbar-width:thin; */
     padding: 15px;
     border: 2px solid white;
     color: white;
+    
 }
 .negative{
     display: flex;
@@ -89,16 +90,23 @@ body{
     color: white;
 }
 .container1{
-    width: 100vw;
+    width: 66vw;
     height: 100vh;
     display:flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    padding: 0px;
+    margin-top: 71px;
+    margin-bottom: 35px;
     
 }
 .left {
     font-size: 2rem;
+}
+.box{
+    display: flex;
+    flex-direction: row;
 }
  nav {
      display: flex;

@@ -34,37 +34,38 @@
         <li><a href="{% url 'contact-us'%}">Contact Us</a></li>
       </ul>
     </nav>
-
-    <div class="title">
-      <h1>Trending Posts</h1>
-      <i class="fa-solid fa-arrow-trend-up" style="color: white"></i>
-    </div>
-    <div class="container1">
-      <div class="contain1">
-        {% for post in posts %}
-        <div id="disposable1">{{post.post_code}}</div>
-        <div class="post">
-          <a href="{% url 'user' post.username %}">{{post.username}}</a>
-        </div>
-        <script>
-          document.querySelectorAll(".post")[
-            document.querySelectorAll(".post").length - 1
-          ].innerHTML += document.getElementById("disposable1").innerText;
-          document.getElementById("disposable1").remove();
-        </script>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-        {% endfor %}
+    <div class="box">
+      <div class="title">
+        <h1>Trending Posts</h1>
+        <i class="fa-solid fa-arrow-trend-up" style="color: white"></i>
       </div>
+      <div class="container1">
+        <div class="contain1">
+          {% for post in posts %}
+          <div id="disposable1">{{post.post_code}}</div>
+          <div class="post">
+            <a href="{% url 'user' post.username %}">{{post.username}}</a>
+          </div>
+          <script>
+            document.querySelectorAll(".post")[
+              document.querySelectorAll(".post").length - 1
+            ].innerHTML += document.getElementById("disposable1").innerText;
+            document.getElementById("disposable1").remove();
+          </script>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+          {% endfor %}
+        </div>
 
-      <div class="yourname">
-        <div class="trends-only">
-          {% for trend in trends %}
-          <a href="{% url 'trends' %}?q={{trend}}">{{trend}}</a>
-          {% endfor%}
+        <div class="yourname">
+          <div class="trends-only">
+            {% for trend in trends %}
+            <a href="{% url 'trends' %}?q={{trend}}">{{trend}}</a>
+            {% endfor%}
+          </div>
         </div>
       </div>
     </div>
