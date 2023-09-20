@@ -1,5 +1,6 @@
-=======
-1. Latest Python version
+# Sentiment Analysis
+# Installtion instructions :-
+1. Make sure you have the latest python and pip versions
 2. Run following command in terminal to install django :
 
 ```shell
@@ -16,7 +17,7 @@ pip install sentencepiece
 python -m spacy install en_core_web_sm
 ```
 
-# REPO INSTRUCTIONS :-
+# Repo Instructions :-
 
 1. Cloning
 
