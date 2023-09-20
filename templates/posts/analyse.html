@@ -108,10 +108,7 @@
         margin-bottom: 15px;
       }
     </style>
-<<<<<<< HEAD
-=======
     
->>>>>>> 8d3bafd976683a8c4fe8d4bbd714b9d3739a5b79
   </head>
 
   <body>
@@ -137,22 +134,21 @@
     </header>
     <main>
       <div class="input-box">
-        <form method="POST">
+        <form method="POST" >
           {%csrf_token%}
-          <input
-            type="text"
-            name="Advait"
-            placeholder="Enter text to be analyzed here..."
-          />
-          <input type="submit" value="analyze sentiment" />
-          <!-- <button type="button" id="analyze-button">Analyze Sentiment</button> -->
+        <input type="text" name="Advait" placeholder="Enter text to be analyzed here...">
+        <input type="submit" value="analyze sentiment">
+        <!-- <button type="button" id="analyze-button">Analyze Sentiment</button> -->
         </form>
       </div>
       <div>
-        {% for topic, sentiment in senti.items %} {% for emotion, deg in
-        sentiment.items %}
-        <p>Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}</p>
-        {% endfor %} {% endfor %}
+          {% for topic, sentiment in senti.items %}
+            {% for emotion, deg in sentiment.items %}
+              <p>
+                  Topic : {{topic}}, Sentiment : {{emotion}}, Degree : {{deg}}
+              </p>
+            {% endfor %}
+          {% endfor %}
       </div>
     </main>
   </body>
