@@ -1,4 +1,5 @@
 # Sentiment Analysis
+A tool analyzing the sentiments expressed by various social media posts.
 # Installtion instructions :-
 1. Make sure you have the latest python and pip versions
 2. Run following command in terminal to install django :
